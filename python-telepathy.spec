@@ -1,6 +1,6 @@
 Name:           python-telepathy
-Version:        0.13.2
-Release:        %mkrel 3
+Version:        0.13.9
+Release:        %mkrel 1
 Summary:        Python libraries for Telepathy
 Group:          Development/Python
 License:        LGPL
@@ -15,6 +15,13 @@ BuildRequires:  python-devel
 %description
 Python libraries for use in Telepathy clients and connection managers.
 
+%files
+%defattr(-,root,root,-)
+%doc COPYING AUTHORS README
+%{python_sitelib}/telepathy/
+%{py_puresitedir}/telepathy_python-0.13.2-py2.5.egg-info
+
+#--------------------------------------------------------------------
 
 %prep
 %setup -q -n telepathy-python-%{version}
@@ -32,12 +39,3 @@ rm -rf $RPM_BUILD_ROOT
  
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-
-%files
-%defattr(-,root,root,-)
-%doc COPYING AUTHORS README
-%{python_sitelib}/telepathy/
-%{py_puresitedir}/telepathy_python-0.13.2-py2.5.egg-info
-
-
