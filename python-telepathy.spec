@@ -9,7 +9,7 @@ Source0:        http://telepathy.freedesktop.org/releases/telepathy-python/telep
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch:      noarch
 BuildRequires:  python-devel
-
+BuildRequires:  libxslt-proc
 
 %description
 Python libraries for use in Telepathy clients and connection managers.
