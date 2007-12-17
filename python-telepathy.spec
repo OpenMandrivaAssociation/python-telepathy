@@ -6,7 +6,6 @@ Group:          Development/Python
 License:        LGPL
 URL:            http://telepathy.freedesktop.org/wiki/
 Source0:        http://telepathy.freedesktop.org/releases/telepathy-python/telepathy-python-%{version}.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch:      noarch
 BuildRequires:  python-devel
 BuildRequires:  libxslt-proc
