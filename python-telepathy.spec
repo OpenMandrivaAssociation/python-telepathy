@@ -1,6 +1,6 @@
 Name:           python-telepathy
-Version:        0.15.3
-Release:        %mkrel 2
+Version:        0.15.6
+Release:        %mkrel 1
 Summary:        Python libraries for Telepathy
 Group:          Development/Python
 License:        LGPLv2+
