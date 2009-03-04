@@ -1,11 +1,11 @@
 Name:           python-telepathy
-Version:        0.15.6
+Version:        0.15.7
 Release:        %mkrel 1
 Summary:        Python libraries for Telepathy
 Group:          Development/Python
 License:        LGPLv2+
 URL:            http://telepathy.freedesktop.org/wiki/
-Source0:        http://telepathy.freedesktop.org/releases/telepathy-python/telepathy-python-%{version}.tar.bz2
+Source0:        http://telepathy.freedesktop.org/releases/telepathy-python/telepathy-python-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch:      noarch
 BuildRequires:  python-devel
