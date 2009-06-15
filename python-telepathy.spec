@@ -1,5 +1,5 @@
 Name:           python-telepathy
-Version:        0.15.7
+Version:        0.15.8
 Release:        %mkrel 1
 Summary:        Python libraries for Telepathy
 Group:          Development/Python
