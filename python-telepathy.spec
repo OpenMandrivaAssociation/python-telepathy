@@ -1,5 +1,5 @@
 Name:           python-telepathy
-Version:        0.15.11
+Version:        0.15.12
 Release:        %mkrel 1
 Summary:        Python libraries for Telepathy
 Group:          Development/Python
@@ -18,7 +18,6 @@ Python libraries for use in Telepathy clients and connection managers.
 %defattr(-,root,root,-)
 %doc COPYING AUTHORS README
 %{python_sitelib}/telepathy/
-%{py_puresitedir}/telepathy_python-%version-py%pyver.egg-info
 
 #--------------------------------------------------------------------
 
@@ -27,13 +26,13 @@ Python libraries for use in Telepathy clients and connection managers.
 
 
 %build
-%{__python} setup.py build
-
+%configure2_5x
+# parallel build fails
+make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
-
+%makeinstall_std
 
 %clean
 rm -rf $RPM_BUILD_ROOT
