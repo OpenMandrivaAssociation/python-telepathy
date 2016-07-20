@@ -1,6 +1,6 @@
 Name:           python2-telepathy
 Version:        0.15.19
-Release:        2
+Release:        3
 Summary:        Python libraries for Telepathy
 Group:          Development/Python
 License:        LGPLv2+
