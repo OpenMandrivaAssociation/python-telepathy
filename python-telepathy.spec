@@ -23,7 +23,7 @@ Python libraries for use in Telepathy clients and connection managers.
 
 %prep
 %setup -q -n telepathy-python-%{version}
-%apply_patches
+%autopatch -p1
 
 %build
 export PYTHON=python2
