@@ -9,6 +9,7 @@ Source0:        https://files.pythonhosted.org/packages/source/t/telepathy/telep
 BuildArch:      noarch
 BuildRequires:  python-devel
 BuildRequires:  libxslt-proc
+BuildRequires:	python-setuptools
 
 %description
 Python libraries for use in Telepathy clients and connection managers.
