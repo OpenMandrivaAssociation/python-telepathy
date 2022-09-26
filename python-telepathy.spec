@@ -1,36 +1,30 @@
-Name:           python2-telepathy
-Version:        0.15.19
-Release:        4
+Name:           python-telepathy
+Version:        2.1.14
+Release:        1
 Summary:        Python libraries for Telepathy
 Group:          Development/Python
 License:        LGPLv2+
 URL:            http://telepathy.freedesktop.org/wiki/
-Source0:        http://telepathy.freedesktop.org/releases/telepathy-python/telepathy-python-%{version}.tar.gz
-Patch1:		python-telepathy-0.15.19-autotools.patch
+Source0:        https://files.pythonhosted.org/packages/source/t/telepathy/telepathy-%{version}.tar.gz
 BuildArch:      noarch
-BuildRequires:  python2-devel
+BuildRequires:  python-devel
 BuildRequires:  libxslt-proc
-%rename	python-telepathy
 
 %description
 Python libraries for use in Telepathy clients and connection managers.
 
 %files
-%doc COPYING AUTHORS README
-%{python2_sitelib}/telepathy/
+%{_bindir}/telepathy
+%{python_sitelib}/telepathy*.egg-info
+%{python_sitelib}/telepathy/
 
 #--------------------------------------------------------------------
 
 %prep
-%setup -q -n telepathy-python-%{version}
-%autopatch -p1
+%autosetup -p1 -n telepathy-%{version}
 
 %build
-export PYTHON=python2
-%configure2_5x
-# parallel build fails
-make
+%py_build
 
 %install
-%makeinstall_std
-
+%py_install
