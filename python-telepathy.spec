@@ -1,5 +1,5 @@
 Name:           python-telepathy
-Version:        2.3.2
+Version:        2.3.4
 Release:        1
 Summary:        Python libraries for Telepathy
 Group:          Development/Python
