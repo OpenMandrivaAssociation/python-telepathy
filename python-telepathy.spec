@@ -4,7 +4,7 @@ Release:        1
 Summary:        Python libraries for Telepathy
 Group:          Development/Python
 License:        LGPLv2+
-URL:            http://telepathy.freedesktop.org/wiki/
+URL:            https://telepathy.freedesktop.org/wiki/
 Source0:        https://files.pythonhosted.org/packages/source/t/telepathy/telepathy-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python-devel
